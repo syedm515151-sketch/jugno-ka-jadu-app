@@ -33,4 +33,8 @@ jobs:
       - name: Run a multi-line script
         run: |
           echo Add other actions to build,
-          echo test, and deploy your project.
+          echo test, and deploy your project.      - name: Upload APK
+        uses: actions/upload-artifact@v4
+        with:
+          name: Jugno-Ka-Jadu-APK
+          path: build/app/outputs/flutter-apk/app-release.apk
